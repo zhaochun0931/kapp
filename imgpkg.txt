@@ -1,0 +1,24 @@
+git clone https://github.com/carvel-dev/imgpkg.git
+cd imgpkg
+
+
+docker login
+
+
+imgpkg push -b index.docker.io/xman1111/simple-app-bundle:v1.0.0 -f examples/basic-step-2
+
+
+$ imgpkg push -b index.docker.io/xman1111/simple-app-bundle:v1.0.0 -f examples/basic-step-2
+dir: .
+dir: .imgpkg
+file: .imgpkg/bundle.yml
+file: .imgpkg/images.yml
+file: config.yml
+Pushed 'index.docker.io/xman1111/simple-app-bundle@sha256:5c2dafe3c70c13990190d643c91e9f67b8129b179257674888178868474f6511'
+Succeeded
+$
+
+
+
+
+imgpkg pull -b index.docker.io/xman1111/simple-app-bundle:v1.0.0 -o ./bundle1
