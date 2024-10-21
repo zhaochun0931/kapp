@@ -22,3 +22,14 @@ $
 
 
 imgpkg pull -b index.docker.io/xman1111/simple-app-bundle:v1.0.0 -o ./bundle1
+
+
+$ imgpkg pull -b index.docker.io/xman1111/simple-app-bundle:v1.0.0 -o ./bundle1
+Pulling bundle 'index.docker.io/xman1111/simple-app-bundle@sha256:5c2dafe3c70c13990190d643c91e9f67b8129b179257674888178868474f6511'
+  Extracting layer 'sha256:45e16698e6e721de091b5ecbb811eae1243fb8f2ed5dbd04a9f40cd199c355f9' (1/1)
+
+Locating image lock file images...
+One or more images not found in bundle repo; skipping lock file update
+
+Succeeded
+$ 
